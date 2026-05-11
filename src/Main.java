@@ -14,6 +14,11 @@ public class Main {
         System.out.println("Bienvenue au jeu de devinettes !");
         System.out.println(" choisissez un nombre entre 1 et 100. Vous avez 10 essais.");
 
+        // 2. Créer la boucle pour les 10 essais
+        while (essaisRestants > 0) {
+            System.out.print("\nEssais restants : " + essaisRestants + ". Devinez le nombre : ");
+            int devinette = scanner.nextInt();
+
 
     }
 }
