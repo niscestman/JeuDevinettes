@@ -19,6 +19,22 @@ public class Main {
             System.out.print("\nEssais restants : " + essaisRestants + ". Devinez le nombre : ");
             int devinette = scanner.nextInt();
 
+            // 3. Comparaison et indications
+            if (devinette == nombreSecret) {
+                System.out.println("Félicitations ! Tu as gagné !");
+                aGagne = true;
+                break; // Met fin à la boucle
+            } else if (devinette > nombreSecret) {
+                System.out.println("Le nombre est plus petit (inférieur).");
+            } else {
+                System.out.println("Le nombre est plus grand (supérieur).");
+            }
 
+            essaisRestants--;
+        }
+
+
+
+        scanner.close();
     }
 }
