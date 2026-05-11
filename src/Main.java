@@ -33,7 +33,10 @@ public class Main {
             essaisRestants--;
         }
 
-
+        // 4. Vérification de fin de partie
+        if (!aGagne) {
+            System.out.println("\nDommage, tu as perdu ! Le nombre était : " + nombreSecret);
+        }
 
         scanner.close();
     }
